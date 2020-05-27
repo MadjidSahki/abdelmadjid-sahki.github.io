@@ -1,0 +1,76 @@
+<h1 style="text-align: center;"> Parcours</h1>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/timeline.css">
+</head>
+
+
+   
+
+    <section class="timeline2">
+        <ul>
+            <li>
+                <div>
+                    <time>Septembre 2016 </time>
+                    Entrée à Intech en vue de prépaprer un diplome d'expert en ingénérie logicielle, titre RNCP niveau 1.
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <time>Mars 2019 - Septembre 2019</time>
+                    Stagiaire en tant que developpeur full-stack chez <mark><a href="http://www.infinitesquare.com/"  style="color: white; text-decoration: none;" target="_blank" >Infinite Square</a></mark>, partie projet, développement d'une plateforme évenementielle pour le groupe Pernod-Ricard.
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <time>Mars 2019</time>
+                    Obtention bachelor en ingénérie logicielle.
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <time>Septembre 2019 - Juillet 2021</time>
+                    Alternance chez Infinite Square, développeur full-stack sur le produit <mark><a href="https://www.inwink.com/"  style="color: white; text-decoration: none;" target="_blank" >Inwink</a></mark>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <time>Juillet 2021 </time>
+                    Obtention du titre d'expert en ingénérie logicielle, titre RNCP niveau 1.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <script>
+        var items = document.querySelectorAll(".timeline2 li");
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    </script>
+
+
+
