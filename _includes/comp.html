@@ -1,0 +1,271 @@
+ <!--LAAAAAAAAAA-->
+    <head>
+        <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/jquery-ui.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/aos.js"></script>
+        <script src="../assets/js/jquery.sticky.js"></script>
+        <script src="../assets/js/isotope.pkgd.min.js"></script>
+        <script src="../assets/js/articles.js"></script>
+    </head>
+
+    <section class="site-section block__62272" id="skills-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 position-relative">
+                    <h2 class="section-title text-center mb-5">Compétences</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5" data-aos="fade">
+                <div id="competencesFilter" class="filters text-center button-group col-md-7">
+                    <button class="btn btn-primary active" id="filterAll" data-filter="*">Tout</button>
+                    <button class="btn btn-primary" id="filterHard" data-filter=".hard">Techniques</button>
+                    <button class="btn btn-primary" id="filterSoft" data-filter=".soft">Transverses</button>
+                    <button class="btn btn-primary" id="filterCommunication" data-filter=".communicationSkill" hidden>
+                        Soft skills
+                    </button>
+                </div>
+            </div>
+            <div id="competences" class="row no-gutter">
+                <div class="item soft communicationSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Communication
+                    </h3>
+                    <a href="../assets/img/digger.png" class="item-wrap" data-toggle="modal"
+                       data-target=".communication">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="communication" src="../assets/img/digger.png" style="width: 250px; height: 250px;">
+                    </a>
+                    <div class="modal fade communication" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Communication</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <p>De nature réservée, c’est en arrivant à IN'TECH que
+                                        j’ai compris que la
+                                        communication est très importante au sein d’un projet.
+                                    </p>
+                                    <p>
+                                        En effet, avant d’entamer cette Ecole supérieure, j’étais souvent dans mon
+                                        coin, je n’interagissais qu’avec peu de monde et encore moins avec des personnes
+                                        que je ne connaissais pas.
+                                    </p>
+                                    <p> Avec les cours de formation humaine, j’ai réalisé que l’acquisition de
+                                        compétences transverses allait m'être bénéfique.
+                                        Je savais très bien que cela n’allait pas arriver par magie, il fallait
+                                        travailler et essayer de les assimiler au cours des différents projets
+                                        qu’In’Tech nous laissait réaliser chaque semestre. Le plus compliqué pour moi
+                                        était de communiquer avec le reste des membres de mon équipe, devant les
+                                        professeurs ou encore devant un jury.
+                                    </p>
+                                    <p> En parallèle de ma scolarité, je travaillais les weekends en tant qu’employé
+                                        polyvalent, cela m’a poussé à
+                                        communiquer avec mes autres collègues, ainsi qu’avec la clientèle.
+                                        Je sentais petit à petit que le contact avec d’autres personnes m’était plus
+                                        facile, pendant les entretiens afin de pouvoir commencer mon stage, je
+                                        m’exprimais avec aisance sans trop stresser, j’ai senti à ce moment que j’avais
+                                        fait une grande progression.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h5 class="col-12 text-center modal-text-title">
+                                                Découvrez les projets où j'ai pu appliquer cette compétence
+                                            </h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject('filterTrumpTower')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".trumptower">Trump Tower
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject('filterShareNStream')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".sharenstream">Share'n Stream
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject('filterDigger')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".digger">Digger
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject('filterCosium')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".cosium">Cosium
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject('filterIcar')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".icar">Icar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item hard javaSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Java
+                    </h3>
+                    <a href="../assets/img/digger.png" class="item-wrap" data-toggle="modal"
+                       data-target=".java">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="java" src="../assets/img/digger.png" style="width: 250px; height: 250px;">
+                    </a>
+                    <div class="modal fade java" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Java</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    Java
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item soft autonomySkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Autonomie
+                    </h3>
+                    <a href="../assets/img/digger.png" class="item-wrap" data-toggle="modal"
+                       data-target=".autonomy">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="autonomy" src="../assets/img/digger.png"style="width: 250px; height: 250px;">
+                    </a>
+                    <div class="modal fade autonomy" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Autonomie</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    Autonomie
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h5 class="col-12 text-center modal-text-title">
+                                                Découvrez les projets où j'ai pu appliquer cette compétence
+                                            </h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject('filterTrumpTower')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".trumptower">Trump Tower
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject('filterDigger')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".digger">Digger
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject('filterIcar')"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".icar">Icar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item hard postgresSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        PostgreSQL
+                    </h3>
+                    <a href="../assets/img/digger.png" class="item-wrap" data-toggle="modal"
+                       data-target=".postgres">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="java" src="../assets/img/digger.png"style="width: 250px; height: 250px;">
+                    </a>
+                    <div class="modal fade postgres" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>PostgreSQL</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item hard angularSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Angular
+                    </h3>
+                    <a href="../assets/img/digger.png" class="item-wrap" data-toggle="modal"
+                       data-target=".angular">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="java" src="../assets/img/digger.png"style="width: 250px; height: 250px;">
+                    </a>
+                    <div class="modal fade angular" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Angular</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    Angular
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
