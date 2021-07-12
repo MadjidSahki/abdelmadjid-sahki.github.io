@@ -10,12 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.14",
+    "cross-spawn": "^7.0.3",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
+    "jekyll": "^3.0.0-beta1",
     "lesshat": "^4.1.0",
     "node-sass": "^5.0.0"
   },
