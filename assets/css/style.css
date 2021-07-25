@@ -1740,3 +1740,19 @@ body:after {
 .footer a:hover {
     color: #000;
 }
+
+#experience > section > ul > li:nth-child(2) > div > mark > a{
+    background-color: brown;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
+    background-color: white !important;
+}
+
+#particles-js > div > div.header-icons > a:nth-child(1) > i{
+    border: none !important;
+}
+
+#particles-js > div > div.header-icons > a:nth-child(2) > i{
+    border: none !important;
+}
